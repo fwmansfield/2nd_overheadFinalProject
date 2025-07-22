@@ -10,7 +10,9 @@ if (!apiKey) {
   process.exit(0);
 }
 
-const baseUrl = "https://newsapi.org/v2/top-headlines";
+// const baseUrl = "https://newsapi.org/v2/top-headlines";
+// We won't limit our search to just top headlines.
+const baseUrl = "https://newsapi.org/v2/everything";
 
 function addApiKey(queryObject) {
   return { ...queryObject, apiKey: apiKey };
@@ -18,7 +20,6 @@ function addApiKey(queryObject) {
 
 export function createUrlFromQueryObject(queryObjectWithApiKey) {
   const queryString = new URLSearchParams(queryObjectWithApiKey).toString();
-  //const url = baseUrlTop + "?" + queryString;
   const url = baseUrl + "?" + queryString;
   return url;
 }
