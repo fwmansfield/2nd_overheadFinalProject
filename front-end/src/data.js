@@ -1,6 +1,6 @@
 export const exampleQuery = {
   queryName: "Query01",
-  q: "state",
+  q: "Query Text",
   language: "en",
   pageSize: 10,
 };
