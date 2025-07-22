@@ -39,6 +39,7 @@ code {
   flex:1;
   padding: 5px;
   max-width: 300px;
+  max-height: 500px;
   font-size: small;
 }
 
