@@ -21,30 +21,32 @@ export function Articles(params) {
       <h3>
         You're searching for {search} in {language}
       </h3>
-      <ol>
-        {articles.map((item, idx) => {
-          if (item) {
-            if (item.title) {
-              if (item.title === "[Removed]") {
-                return <li key={idx}>Was Removed</li>;
+      <div className="scroll-container">
+        <ol>
+          {articles.map((item, idx) => {
+            if (item) {
+              if (item.title) {
+                if (item.title === "[Removed]") {
+                  return <li key={idx}>Was Removed</li>;
+                }
+                let trimTitle = item.title.substring(0, 60);
+                return (
+                  <li key={idx}>
+                    {trimTitle}
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      &nbsp;Link
+                    </a>
+                  </li>
+                );
+              } else {
+                return <li key={idx}>No Title</li>;
               }
-              let trimTitle = item.title.substring(0, 60);
-              return (
-                <li key={idx}>
-                  {trimTitle}
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    &nbsp;Link
-                  </a>
-                </li>
-              );
             } else {
-              return <li key={idx}>No Title</li>;
+              return <li key={1}>No Item</li>;
             }
-          } else {
-            return <li key={1}>No Item</li>;
-          }
-        })}
-      </ol>
+          })}
+        </ol>
+      </div>
       <br />
       Query: {queryName}
       <br />
