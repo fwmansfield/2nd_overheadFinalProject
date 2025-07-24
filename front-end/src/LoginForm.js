@@ -7,6 +7,7 @@ export function LoginForm(params) {
 
   return (
     <div className="login-box">
+      <span className="title">Login</span>
       <div className={params.currentUser ? "hidden" : "visible"}>
         <div>
           <label htmlFor="user">User: </label>
