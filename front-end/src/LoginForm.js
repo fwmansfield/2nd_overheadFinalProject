@@ -6,18 +6,12 @@ export function LoginForm(params) {
   };
 
   return (
-    <div className="box" style={{ maxWidth: "unset" }}>
-      <button onClick={params.login}>
-        {params.currentUser ? "Logout" : "Login"}
-      </button>
-      &nbsp;User:{" "}
-      <span style={{ fontWeight: "bold" }}>
-        {params.currentUser ? params.currentUser.user : "not logged in"}
-      </span>
+    <div className="login-box">
       <div className={params.currentUser ? "hidden" : "visible"}>
         <div>
           <label htmlFor="user">User: </label>
           <input
+            className="inputbox"
             type="text"
             size={10}
             id="user"
@@ -30,6 +24,7 @@ export function LoginForm(params) {
         <div>
           <label htmlFor="password">Password: </label>
           <input
+            className="inputbox"
             type="text"
             size={10}
             id="password"
@@ -39,6 +34,13 @@ export function LoginForm(params) {
           />
         </div>
       </div>
+      <button onClick={params.login}>
+        {params.currentUser ? "Logout" : "Login"}
+      </button>
+      &nbsp;User:{" "}
+      <span style={{ fontWeight: "bold" }}>
+        {params.currentUser ? params.currentUser.user : "not logged in"}
+      </span>
     </div>
   );
 }

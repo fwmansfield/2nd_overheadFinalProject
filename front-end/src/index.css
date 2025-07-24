@@ -11,9 +11,6 @@ header p{
   font-size: large;
 }
 
-ol{
-  padding-left:20px;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -34,14 +31,7 @@ code {
   flex-direction: row;
 }
 
-.box{
-  border:1px solid black;
-  flex:1;
-  padding: 5px;
-  max-width: 300px;
-  max-height: 500px;
-  font-size: small;
-}
+
 
 .box span{
   padding: 3px;
@@ -51,7 +41,6 @@ code {
 .title{
   font-weight: bold;
   display: block;
-  background-color: #888;
   color: white;
 }
 

@@ -12,6 +12,7 @@ export function NewsReader() {
   const [credentials, setCredentials] = useState({ user: "", password: "" });
   const urlNews = "/news";
   const urlQueries = "/queries";
+
   const urlUsersAuth = "/users/authenticate";
   const [savedQueries, setSavedQueries] = useState([{ ...exampleQuery }]);
   const [queryFormObject, setQueryFormObject] = useState({ ...exampleQuery });
@@ -27,6 +28,7 @@ export function NewsReader() {
   async function login() {
     if (currentUser !== null) {
       // logout
+
       setCurrentUser(null);
     } else {
       // login
@@ -146,7 +148,7 @@ export function NewsReader() {
   }
 
   return (
-    <div>
+    <div className="news-reader">
       {" "}
       <LoginForm
         login={login}

@@ -33,6 +33,7 @@ export function QueryForm(params) {
         <div>
           <label htmlFor="queryName">Query Name: </label>
           <input
+            className="inputbox"
             type="text"
             size={10}
             id="queryName"
@@ -44,6 +45,7 @@ export function QueryForm(params) {
         <div>
           <label htmlFor="q">Query Text: </label>
           <input
+            className="inputbox"
             type="text"
             size={10}
             id="q"
@@ -87,7 +89,7 @@ export function QueryForm(params) {
             />
           </div>
         </div>
-        <span style={{ display: "block", backgroundColor: "#eee" }}>
+        <span style={{ display: "block" }}>
           <input type="button" value="Submit" onClick={onSubmitClick} />
         </span>
       </form>

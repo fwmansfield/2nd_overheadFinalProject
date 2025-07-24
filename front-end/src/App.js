@@ -1,12 +1,11 @@
-import { NewsReader } from './NewsReader';
-import './App.css';
+import { NewsReader } from "./NewsReader";
+import "./App.css";
 
 function App() {
-
   return (
-    <div>
+    <div className="app">
       <header>
-        <p>News Reader App</p>
+        <p>Team Overhead's News Reader App</p>
       </header>
       <NewsReader />
     </div>

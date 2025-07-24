@@ -1,0 +1,38 @@
+[
+  {
+    "queryName": "Query001",
+    "q": "Football",
+    "language": "en",
+    "pageSize": "10"
+  },
+  {
+    "queryName": "Query002",
+    "q": "Baseball",
+    "language": "en",
+    "pageSize": "10"
+  },
+  {
+    "queryName": "Query003",
+    "q": "Basketball",
+    "language": "en",
+    "pageSize": "5"
+  },
+  {
+    "queryName": "Query005",
+    "q": "Hockey",
+    "language": "en",
+    "pageSize": "5"
+  },
+  {
+    "queryName": "Query006",
+    "q": "Soccer",
+    "language": "en",
+    "pageSize": "10"
+  },
+  {
+    "queryName": "Query007",
+    "q": "Cheerleading",
+    "language": "en",
+    "pageSize": "5"
+  }
+]
